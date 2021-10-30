@@ -6,7 +6,7 @@
 /*   By: msotelo- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 17:43:20 by msotelo-          #+#    #+#             */
-/*   Updated: 2021/10/27 19:03:45 by msotelo-         ###   ########.fr       */
+/*   Updated: 2021/10/30 13:27:01 by msotelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
@@ -53,7 +53,7 @@ char	*ft_itoa_len(long n)
 		j = j / 10;
 		i++;
 	}
-	res = (char *)malloc(sizeof (char) * (i + 1));
+	res = (char *)malloc(sizeof (char) * (i + 2));
 	res = ft_subitoa(i, n, sign, res);
 	return (res);
 }
